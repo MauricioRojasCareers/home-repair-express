@@ -11,23 +11,35 @@ export default function Home() {
             <Image
               src="/home-repair-logo.jpg"
               alt="Home Repair Express Logo"
-              width={200}
-              height={100}
+              width={120}
+              height={60}
               priority
-              className="h-auto w-auto"
+              className="h-auto w-16 md:w-24 rounded-full"
             />
           </Link>
           <div className="flex gap-6">
-            <Link href="#services" className="text-white hover:text-orange-400 transition-colors">
+            <Link
+              href="#services"
+              className="text-white hover:text-orange-400 transition-colors"
+            >
               Services
             </Link>
-            <Link href="#about" className="text-white hover:text-orange-400 transition-colors">
+            <Link
+              href="#about"
+              className="text-white hover:text-orange-400 transition-colors"
+            >
               About
             </Link>
-            <Link href="/gallery" className="text-white hover:text-orange-400 transition-colors">
+            <Link
+              href="/gallery"
+              className="text-white hover:text-orange-400 transition-colors"
+            >
               Gallery
             </Link>
-            <Link href="#contact" className="text-white hover:text-orange-400 transition-colors">
+            <Link
+              href="#contact"
+              className="text-white hover:text-orange-400 transition-colors"
+            >
               Contact
             </Link>
           </div>
@@ -61,48 +73,68 @@ export default function Home() {
 
         {/* Services Section */}
         <section id="services" className="mb-20">
-          <h2 className="text-4xl font-bold text-white text-center mb-12">Our Services</h2>
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
+            Our Services
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-4xl mb-4">🔧</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">Plumbing</h3>
+              <h3 className="text-2xl font-semibold text-white mb-3">
+                Plumbing
+              </h3>
               <p className="text-blue-200">
-                Expert plumbing repairs, installations, and maintenance for all your water and drainage needs.
+                Expert plumbing repairs, installations, and maintenance for all
+                your water and drainage needs.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">Electrical</h3>
+              <h3 className="text-2xl font-semibold text-white mb-3">
+                Electrical
+              </h3>
               <p className="text-blue-200">
-                Safe and reliable electrical repairs, installations, and upgrades by certified electricians.
+                Safe and reliable electrical repairs, installations, and
+                upgrades by certified electricians.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-4xl mb-4">❄️</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">AC & Heating</h3>
+              <h3 className="text-2xl font-semibold text-white mb-3">
+                AC & Heating
+              </h3>
               <p className="text-blue-200">
-                Professional HVAC services including installation, repair, and maintenance for all your heating and cooling needs.
+                Professional HVAC services including installation, repair, and
+                maintenance for all your heating and cooling needs.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-4xl mb-4">🪵</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">Fencing</h3>
+              <h3 className="text-2xl font-semibold text-white mb-3">
+                Fencing
+              </h3>
               <p className="text-blue-200">
-                Professional fence installation, repair, and replacement services to secure and enhance your property.
+                Professional fence installation, repair, and replacement
+                services to secure and enhance your property.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-4xl mb-4">📺</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">TV Mounting</h3>
+              <h3 className="text-2xl font-semibold text-white mb-3">
+                TV Mounting
+              </h3>
               <p className="text-blue-200">
-                Expert TV mounting services for flat screens, ensuring secure installation and optimal viewing angles.
+                Expert TV mounting services for flat screens, ensuring secure
+                installation and optimal viewing angles.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-4xl mb-4">🔨</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">General Repairs</h3>
+              <h3 className="text-2xl font-semibold text-white mb-3">
+                General Repairs
+              </h3>
               <p className="text-blue-200">
-                Comprehensive home repair services for all your maintenance and improvement needs.
+                Comprehensive home repair services for all your maintenance and
+                improvement needs.
               </p>
             </div>
           </div>
@@ -111,30 +143,44 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="mb-20">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-            <h2 className="text-4xl font-bold text-white mb-6 text-center">Why Choose Home Repair Express?</h2>
+            <h2 className="text-4xl font-bold text-white mb-6 text-center">
+              Why Choose Home Repair Express?
+            </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-2xl font-semibold text-orange-400 mb-4">Fast & Reliable</h3>
+                <h3 className="text-2xl font-semibold text-orange-400 mb-4">
+                  Fast & Reliable
+                </h3>
                 <p className="text-blue-200">
-                  We understand that home repairs can't wait. Our team responds quickly and gets the job done right the first time.
+                  We understand that home repairs can&apos;t wait. Our team responds
+                  quickly and gets the job done right the first time.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-orange-400 mb-4">Expert Technicians</h3>
+                <h3 className="text-2xl font-semibold text-orange-400 mb-4">
+                  Expert Technicians
+                </h3>
                 <p className="text-blue-200">
-                  All our technicians are licensed, insured, and experienced professionals committed to quality workmanship.
+                  All our technicians are licensed, insured, and experienced
+                  professionals committed to quality workmanship.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-orange-400 mb-4">Fair Pricing</h3>
+                <h3 className="text-2xl font-semibold text-orange-400 mb-4">
+                  Fair Pricing
+                </h3>
                 <p className="text-blue-200">
-                  Transparent, competitive pricing with no hidden fees. We provide detailed estimates before starting any work.
+                  Transparent, competitive pricing with no hidden fees. We
+                  provide detailed estimates before starting any work.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-orange-400 mb-4">Satisfaction Guaranteed</h3>
+                <h3 className="text-2xl font-semibold text-orange-400 mb-4">
+                  Satisfaction Guaranteed
+                </h3>
                 <p className="text-blue-200">
-                  We stand behind our work with a satisfaction guarantee. Your peace of mind is our priority.
+                  We stand behind our work with a satisfaction guarantee. Your
+                  peace of mind is our priority.
                 </p>
               </div>
             </div>
@@ -143,7 +189,9 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="mb-20">
-          <h2 className="text-4xl font-bold text-white text-center mb-12">Get In Touch</h2>
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
+            Get In Touch
+          </h2>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 max-w-2xl mx-auto">
             <div className="space-y-6">
               <div>
@@ -152,7 +200,9 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-                <p className="text-blue-200 text-lg">homerepairexpress@contractor.net</p>
+                <p className="text-blue-200 text-lg">
+                  homerepairexpress@contractor.net
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Hours</h3>
@@ -177,7 +227,8 @@ export default function Home() {
       <footer className="border-t border-white/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-blue-200">
-            © {new Date().getFullYear()} Home Repair Express. All rights reserved.
+            © {new Date().getFullYear()} Home Repair Express. All rights
+            reserved.
           </p>
         </div>
       </footer>
