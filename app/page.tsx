@@ -75,24 +75,24 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">🪚</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">Carpentry</h3>
+              <div className="text-4xl mb-4">❄️</div>
+              <h3 className="text-2xl font-semibold text-white mb-3">AC & Heating</h3>
               <p className="text-blue-200">
-                Quality carpentry work including repairs, installations, and custom woodworking projects.
+                Professional HVAC services including installation, repair, and maintenance for all your heating and cooling needs.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">🪟</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">Windows & Doors</h3>
+              <div className="text-4xl mb-4">🪵</div>
+              <h3 className="text-2xl font-semibold text-white mb-3">Fencing</h3>
               <p className="text-blue-200">
-                Window and door repairs, replacements, and installations to improve your home's efficiency.
+                Professional fence installation, repair, and replacement services to secure and enhance your property.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">🧱</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">Drywall & Painting</h3>
+              <div className="text-4xl mb-4">📺</div>
+              <h3 className="text-2xl font-semibold text-white mb-3">TV Mounting</h3>
               <p className="text-blue-200">
-                Professional drywall repairs and interior/exterior painting services to refresh your space.
+                Expert TV mounting services for flat screens, ensuring secure installation and optimal viewing angles.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
@@ -145,18 +145,16 @@ export default function Home() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-                <p className="text-blue-200 text-lg">(555) 123-4567</p>
+                <p className="text-blue-200 text-lg">(346) 690-3030</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-                <p className="text-blue-200 text-lg">info@homerepairexpress.com</p>
+                <p className="text-blue-200 text-lg">homerepairexpress@contractor.net</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Hours</h3>
                 <p className="text-blue-200 text-lg">
-                  Monday - Friday: 7:00 AM - 7:00 PM<br />
-                  Saturday: 8:00 AM - 5:00 PM<br />
-                  Sunday: Emergency Service Only
+                  24/7 - Available Anytime
                 </p>
               </div>
               <div className="pt-4">
