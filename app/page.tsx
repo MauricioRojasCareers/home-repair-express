@@ -24,6 +24,9 @@ export default function Home() {
             <Link href="#about" className="text-white hover:text-orange-400 transition-colors">
               About
             </Link>
+            <Link href="/gallery" className="text-white hover:text-orange-400 transition-colors">
+              Gallery
+            </Link>
             <Link href="#contact" className="text-white hover:text-orange-400 transition-colors">
               Contact
             </Link>
