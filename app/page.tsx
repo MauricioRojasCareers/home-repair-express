@@ -162,7 +162,7 @@ export default function Home() {
               </div>
               <div className="pt-4">
                 <Link
-                  href="tel:+3466903030"
+                  href="tel:+13466903030"
                   className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
                 >
                   Call Now
