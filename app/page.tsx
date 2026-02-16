@@ -76,56 +76,53 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-white text-center mb-12">
             Our Services
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">🔧</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">
-                Plumbing
-              </h3>
-              <p className="text-blue-200">
-                Expert plumbing repairs, installations, and maintenance for all
-                your water and drainage needs.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">
-                Electrical
-              </h3>
-              <p className="text-blue-200">
-                Safe and reliable electrical repairs, installations, and
-                upgrades by certified electricians.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">🪵</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">
-                Fencing
-              </h3>
-              <p className="text-blue-200">
-                Professional fence installation, repair, and replacement
-                services to secure and enhance your property.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">📺</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">
-                TV Mounting
-              </h3>
-              <p className="text-blue-200">
-                Expert TV mounting services for flat screens, ensuring secure
-                installation and optimal viewing angles.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">🔨</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">
-                General Repairs
-              </h3>
-              <p className="text-blue-200">
-                Comprehensive home repair services for all your maintenance and
-                improvement needs.
-              </p>
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-12 border border-white/20 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">🔧</span>
+                  <h3 className="text-xl font-semibold text-white">Plumbing</h3>
+                </div>
+                <p className="text-blue-200 ml-12">
+                  Expert plumbing repairs, installations, and maintenance for all your water and drainage needs.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">⚡</span>
+                  <h3 className="text-xl font-semibold text-white">Electrical</h3>
+                </div>
+                <p className="text-blue-200 ml-12">
+                  Safe and reliable electrical repairs, installations, and upgrades by certified electricians.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">🪵</span>
+                  <h3 className="text-xl font-semibold text-white">Fencing</h3>
+                </div>
+                <p className="text-blue-200 ml-12">
+                  Professional fence installation, repair, and replacement services to secure and enhance your property.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">📺</span>
+                  <h3 className="text-xl font-semibold text-white">TV Mounting</h3>
+                </div>
+                <p className="text-blue-200 ml-12">
+                  Expert TV mounting services for flat screens, ensuring secure installation and optimal viewing angles.
+                </p>
+              </div>
+              <div className="md:col-span-2">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">🔨</span>
+                  <h3 className="text-xl font-semibold text-white">General Repairs</h3>
+                </div>
+                <p className="text-blue-200 ml-12">
+                  Comprehensive home repair services for all your maintenance and improvement needs.
+                </p>
+              </div>
             </div>
           </div>
         </section>
