@@ -3,14 +3,6 @@ import Link from "next/link";
 
 const galleryImages = [
   {
-    src: "/gallery/air-condition-special.jpeg",
-    alt: "Home Repair Express Work",
-  },
-  {
-    src: "/gallery/IMG_7623.jpeg",
-    alt: "Home Repair Express Work",
-  },
-  {
     src: "/gallery/IMG_7106.jpeg",
     alt: "Home Repair Express Work",
   },

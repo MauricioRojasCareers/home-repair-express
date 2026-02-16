@@ -98,16 +98,6 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-4xl mb-4">❄️</div>
-              <h3 className="text-2xl font-semibold text-white mb-3">
-                AC & Heating
-              </h3>
-              <p className="text-blue-200">
-                Professional HVAC services including installation, repair, and
-                maintenance for all your heating and cooling needs.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-4xl mb-4">🪵</div>
               <h3 className="text-2xl font-semibold text-white mb-3">
                 Fencing
