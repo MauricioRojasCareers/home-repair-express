@@ -1,6 +1,65 @@
 import Image from "next/image";
 import Link from "next/link";
 
+function CalendarWidget() {
+  const today = new Date();
+  const currentMonth = today.getMonth();
+  const currentYear = today.getFullYear();
+  const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+  const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
+  
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  
+  const days = [];
+  // Add empty cells for days before the first day of the month
+  for (let i = 0; i < firstDayOfMonth; i++) {
+    days.push(null);
+  }
+  // Add all days of the month
+  for (let day = 1; day <= daysInMonth; day++) {
+    days.push(day);
+  }
+  
+  return (
+    <div className="text-white">
+      <div className="text-center mb-4">
+        <h4 className="text-lg font-semibold text-orange-400">
+          {monthNames[currentMonth]} {currentYear}
+        </h4>
+      </div>
+      <div className="grid grid-cols-7 gap-1 text-center text-sm">
+        {dayNames.map((day) => (
+          <div key={day} className="font-semibold text-blue-300 py-2">
+            {day}
+          </div>
+        ))}
+        {days.map((day, index) => (
+          <div
+            key={index}
+            className={`py-2 rounded ${
+              day === today.getDate()
+                ? "bg-orange-500 text-white font-bold"
+                : day
+                ? "text-white hover:bg-white/10 cursor-pointer"
+                : "text-transparent"
+            }`}
+          >
+            {day || ""}
+          </div>
+        ))}
+      </div>
+      <p className="text-xs text-blue-300 mt-4 text-center">
+        Available 24/7 - Call to schedule
+      </p>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-blue-900 to-slate-900">
@@ -193,30 +252,41 @@ export default function Home() {
             Get In Touch
           </h2>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 max-w-2xl mx-auto">
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-                <p className="text-blue-200 text-lg">(346) 690-3030</p>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Contact Information */}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
+                  <p className="text-blue-200 text-lg">(346) 690-3030</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
+                  <p className="text-blue-200 text-lg">
+                    homerepairexpress@contractor.net
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Hours</h3>
+                  <p className="text-blue-200 text-lg">
+                    24/7 - Available Anytime
+                  </p>
+                </div>
+                <div className="pt-4">
+                  <Link
+                    href="tel:+13466903030"
+                    className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
+                  >
+                    Call Now
+                  </Link>
+                </div>
               </div>
+
+              {/* Calendar */}
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-                <p className="text-blue-200 text-lg">
-                  homerepairexpress@contractor.net
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Hours</h3>
-                <p className="text-blue-200 text-lg">
-                  24/7 - Available Anytime
-                </p>
-              </div>
-              <div className="pt-4">
-                <Link
-                  href="tel:+13466903030"
-                  className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
-                >
-                  Call Now
-                </Link>
+                <h3 className="text-xl font-semibold text-white mb-4">Schedule an Appointment</h3>
+                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                  <CalendarWidget />
+                </div>
               </div>
             </div>
           </div>
